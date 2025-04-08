@@ -5,21 +5,102 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Portfolio Site</title>
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body>
         <img class="image-gradient" src="gradient.png" alt="Portfolio Logo" />
         <div class="layer-blur"></div>
         <div class="container">
             <header>
-                <h1 class="logo">Portfolio Site okrdima</h1>
+                <h1 class="logo" data-aos="fade-down" data-aos-duration="1500">
+                    Dimas X
+                </h1>
                 <nav>
-                    <a href="#">Home</a>
-                    <a href="#">Company</a>
-                    <a href="#">Contacts</a>
-                    <a href="#">Docs</a>
+                    <a data-aos="fade-down" data-aos-duration="1500" href="#"
+                        >Home</a
+                    >
+                    <a data-aos="fade-down" data-aos-duration="2000" href="#"
+                        >Company</a
+                    >
+                    <a data-aos="fade-down" data-aos-duration="2500" href="#"
+                        >Contacts</a
+                    >
+                    <a data-aos="fade-down" data-aos-duration="3000" href="#"
+                        >Docs</a
+                    >
                 </nav>
-                <button class="btn-singing">SIGNING</button>
+                <button
+                    class="btn-signing"
+                    data-aos="fade-down"
+                    data-aos-duration="1500"
+                >
+                    SIGNING
+                </button>
             </header>
+
+            <main>
+                <div class="content">
+                    <div
+                        class="tag-box"
+                        data-aos="fade-zoom-in"
+                        data-aos-easing="ease-in-back"
+                        data-aos-delay="300"
+                        data-aos-offset="0"
+                        data-aos-duration="2000"
+                    >
+                        <div class="tag">INTRODACTION &wedbar;</div>
+                    </div>
+                    <h1
+                        data-aos="fade-zoom-in"
+                        data-aos-easing="ease-in-back"
+                        data-aos-delay="300"
+                        data-aos-offset="0"
+                        data-aos-duration="2500"
+                    >
+                        EMAIL FOR DEVELOPERS
+                    </h1>
+                    <p
+                        class="description"
+                        data-aos="fade-zoom-in"
+                        data-aos-easing="ease-in-back"
+                        data-aos-delay="300"
+                        data-aos-offset="0"
+                        data-aos-duration="3000"
+                    >
+                        The best way to reach humans instead of spam folders and
+                        deliver transactional and marketing emails at scale.
+                    </p>
+                    <div
+                        class="buttons"
+                        data-aos="fade-zoom-in"
+                        data-aos-easing="ease-in-back"
+                        data-aos-delay="300"
+                        data-aos-offset="0"
+                        data-aos-duration="1500"
+                    >
+                        <a href="#" class="btn-docs">Documentation &gt;</a>
+                        <a href="#" class="btn-get-started">Get Stared &gt;</a>
+                    </div>
+                </div>
+            </main>
+
+            <spline-viewer
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300"
+                data-aos-offset="0"
+                data-aos-duration="3000"
+                class="robot-3d"
+                url="https://prod.spline.design/1dcxapFMBHoCIfHs/scene.splinecode"
+            />
         </div>
+        <script
+            type="module"
+            src="https://unpkg.com/@splinetool/viewer@1.9.72/build/spline-viewer.js"
+        ></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
